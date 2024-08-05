@@ -7,7 +7,6 @@
     "@mantine/form": "^7.11.2",
     "@mantine/hooks": "^7.11.2",
     "@mantine/modals": "^7.11.2",
-    "@mantine/notifications": "^7.11.2",
     "@tabler/icons-react": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,11 +14,9 @@
     "axios": "^1.7.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
     "socket.io-client": "^4.7.5",
-    "typeface-poppins": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://bitmediaastas2286-09f5ef2fb858.herokuapp.com/",
   "devDependencies": {
     "postcss": "^8.4.40",
     "postcss-preset-mantine": "^1.17.0",
