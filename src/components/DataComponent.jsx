@@ -8,7 +8,7 @@ const DataComponent = () => {
     useEffect(() => {
         const fetchDbInfo = async () => {
           try {
-            const response = await axios.get('/api/record-counts');
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/record-counts`);
             setDbInfo(response.data);
           } catch (error) {
             console.error('Error fetching DB info:', error);

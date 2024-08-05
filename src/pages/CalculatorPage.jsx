@@ -48,7 +48,7 @@ function CalculatorPage() {
         try {
             setPrediction('Updating...');
             setLoading(true);
-            const response = await axios.post('/api/campaign',values);
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/campaign`,values);
             setPrediction(response.data);
             setError(null);
             setErrorModalOpened(false);

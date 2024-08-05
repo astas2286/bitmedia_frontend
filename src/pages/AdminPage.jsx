@@ -14,7 +14,7 @@ function AdminPage() {
   const [errorModalOpened,setErrorModalOpened] = useState(false);
 
   useEffect(() => {
-    const socket = io(process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000');
+    const socket = io(process.env.REACT_APP_BACKEND_URL);
 
     socket.on('message',(message) => {
       setLogs((prevLogs) => [...prevLogs,message]);
@@ -44,7 +44,7 @@ function AdminPage() {
     setLogs([]);
     setLoading(true);
     try {
-      const response = await axios.post('/api/initialize-db',values);
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/initialize-db`,values);
     } catch (error) {
       console.error('Error initializing database:',error);
       setError(error.message);

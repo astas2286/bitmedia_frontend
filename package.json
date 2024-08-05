@@ -43,7 +43,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://bitmediaastas2286-09f5ef2fb858.herokuapp.com/",
   "devDependencies": {
     "postcss": "^8.4.40",
     "postcss-preset-mantine": "^1.17.0",
