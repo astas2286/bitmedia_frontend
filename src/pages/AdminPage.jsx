@@ -45,6 +45,8 @@ function AdminPage() {
     setLoading(true);
     try {
       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/initialize-db`,values);
+      console.log(response.data);
+      
     } catch (error) {
       console.error('Error initializing database:',error);
       setError(error.message);
