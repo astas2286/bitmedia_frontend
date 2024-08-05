@@ -19,7 +19,7 @@ function CalculatorPage() {
     const categories = ['Technology','Finance','Entertainment','Education','Health'];
 
     useEffect(() => {
-        const socket = io(process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000');
+        const socket = io(`${process.env.REACT_APP_BACKEND_URL}`);
 
         socket.on('message',(message) => {
             setLogs((prevLogs) => [...prevLogs,message]);

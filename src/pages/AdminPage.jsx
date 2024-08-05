@@ -14,7 +14,7 @@ function AdminPage() {
   const [errorModalOpened,setErrorModalOpened] = useState(false);
 
   useEffect(() => {
-    const socket = io(process.env.REACT_APP_BACKEND_URL);
+    const socket = io(`${process.env.REACT_APP_BACKEND_URL}`);
 
     socket.on('message',(message) => {
       setLogs((prevLogs) => [...prevLogs,message]);
