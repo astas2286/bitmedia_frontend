@@ -2,7 +2,7 @@
 # Super Ad Manager
 
 Super Ad Manager is a web application designed to help users create and manage advertisement campaigns. The application allows users to select banner sizes, categories, and set budgets for their campaigns. It also provides real-time recommendations and statistics for ad campaigns. The front-end is built with React, and the back-end server is implemented with Node.js and hosted on Heroku. Real-time logging is facilitated using Socket.io.
-You can find it hosted on https://profound-selkie-bae5d9.netlify.app/admin-page
+You can find it hosted on [https://profound-selkie-bae5d9.netlify.app/admin-page](https://profound-selkie-bae5d9.netlify.app/)
 
 ## Table of Contents
 
