@@ -1,4 +1,4 @@
-import { AppShell, Button, NavLink } from '@mantine/core';
+import { AppShell, NavLink } from '@mantine/core';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
