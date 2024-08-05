@@ -19,7 +19,7 @@ function App() {
       padding="md"
     >
       <Header toggle={toggle} opened={opened} />
-      <Navbar />
+      <Navbar toggle={toggle}/>
       <AppShell.Main>
         <BGComponent>
           <RouterSwitcher />

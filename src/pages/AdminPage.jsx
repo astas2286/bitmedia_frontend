@@ -14,9 +14,10 @@ function AdminPage() {
   const [errorModalOpened,setErrorModalOpened] = useState(false);
 
   useEffect(() => {
-    const socket = io(`${process.env.REACT_APP_BACKEND_SOCKET_URL}`,{
+    const socket = io(`${process.env.REACT_APP_BACKEND_URL}`,{
       secure: true,
-      rejectUnauthorized: false
+      rejectUnauthorized: false,
+      transports: ['websocket', 'polling']
     });
 
     socket.on('message',(message) => {
@@ -30,7 +31,7 @@ function AdminPage() {
 
   const form = useForm({
     initialValues: {
-      impressions: 2000000,
+      impressions: 20000,
       clickRate: 30,
       numWorkers: 8,
     },

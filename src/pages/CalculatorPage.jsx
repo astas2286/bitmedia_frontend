@@ -19,9 +19,10 @@ function CalculatorPage() {
     const categories = ['Technology','Finance','Entertainment','Education','Health'];
 
     useEffect(() => {
-        const socket = io(`${process.env.REACT_APP_BACKEND_SOCKET_URL}` ,{
+        const socket = io(`${process.env.REACT_APP_BACKEND_URL}` ,{
             secure: true,
-            rejectUnauthorized: false
+            rejectUnauthorized: false,
+            transports: ['websocket', 'polling']
           });
 
         socket.on('message',(message) => {
